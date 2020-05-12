@@ -1,14 +1,18 @@
  <header class="main-header">
  	
+	<!--=====================================
+	LOGOTIPO
+	======================================-->
 	<a href="inicio" class="logo">
-	
+		
+		<!-- logo mini -->
 		<span class="logo-mini">
 			
 			<img src="vistas/img/plantilla/icono-blanco.png" class="img-responsive" style="padding:10px">
 
 		</span>
 
-		
+		<!-- logo normal -->
 
 		<span class="logo-lg">
 			
@@ -18,14 +22,20 @@
 
 	</a>
 
-	
+	<!--=====================================
+	BARRA DE NAVEGACIÓN
+	======================================-->
 	<nav class="navbar navbar-static-top" role="navigation">
+		
+		<!-- Botón de navegación -->
 
 	 	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         	
         	<span class="sr-only">Toggle navigation</span>
       	
       	</a>
+
+		<!-- perfil de usuario -->
 
 		<div class="navbar-custom-menu">
 				
@@ -55,6 +65,7 @@
 
 					</a>
 
+					<!-- Dropdown-toggle -->
 
 					<ul class="dropdown-menu">
 						
