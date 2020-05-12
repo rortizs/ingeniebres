@@ -21,7 +21,6 @@
 
 	<nav class="navbar navbar-static-top" role="navigation">
 		
-		<!-- Botón de navegación -->
 
 	 	<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         	
