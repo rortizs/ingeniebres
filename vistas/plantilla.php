@@ -117,7 +117,7 @@ CUERPO DOCUMENTO
 
 	/*ENCABEZADO*/
 
-  include 'Modulos/header.php';
+  include 'modulos/header.php';
 
     /*MENU*/
 
