@@ -8,7 +8,6 @@ require_once "controladores/productos.controlador.php";
 require_once "controladores/ventas.controlador.php";
 
 
-
 require_once "Modelos/categorias.modelo.php";
 require_once "Modelos/clientes.modelo.php";
 require_once "Modelos/productos.modelo.php";
