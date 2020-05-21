@@ -1,2 +1,8 @@
 Para arreglar el problema de algunos archivos que fueron subidos sin control, y esto ocasiono un error,
-Se decidio mejor actualizar todo el repositorio con un unico commit los archivos subidos son los que se presentaron en la sesion del dia 20 de mayo
+Se decidio mejor actualizar todo el repositorio con un unico commit los archivos subidos son los que se presentaron en la sesion del dia 20 de mayo.
+
+
+
+ACCESO AL SISTEMA
+USUARIO= admin	
+CONTRASEÑA= admin
