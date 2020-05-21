@@ -1,6 +1,7 @@
 Para arreglar el problema de algunos archivos que fueron subidos sin control, y esto ocasiono un error,
 Se decidio mejor actualizar todo el repositorio con un unico commit los archivos subidos son los que se presentaron en la sesion del dia 20 de mayo.
 
+Para evitar problemas cuando el proyecto este completado, se subira con un unico commit todo.
 
 
 ACCESO AL SISTEMA
