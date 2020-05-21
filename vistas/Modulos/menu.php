@@ -30,6 +30,8 @@
 
 			</li>';
 
+
+
 		}
 
 
@@ -47,6 +49,42 @@
 			</li>';
 
 		}
+
+
+		if($_SESSION["perfil"] == "Administrador"){
+
+			echo '<li class="active">
+
+				<a href="categorias">
+
+					<i class="fa fa-th"></i>
+					<span>Categorias</span>
+
+				</a>
+
+			</li>';
+			
+
+		}
+
+
+		if($_SESSION["perfil"] == "Administrador"){
+
+			echo '<li class="active">
+
+				<a href="productos">
+
+					<i class="fa fa-product-hunt"></i>
+					<span>productos</span>
+
+				</a>
+
+			</li>';
+			
+
+		}
+		
+		
 
 		
 

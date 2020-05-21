@@ -42,7 +42,9 @@ $('#daterange-btn2').daterangepicker(
 
 )
 
-
+/*=============================================
+CANCELAR RANGO DE FECHAS
+=============================================*/
 
 $(".daterangepicker.opensright .range_inputs .cancelBtn").on("click", function(){
 
@@ -51,7 +53,9 @@ $(".daterangepicker.opensright .range_inputs .cancelBtn").on("click", function()
 	window.location = "reportes";
 })
 
-
+/*=============================================
+CAPTURAR HOY
+=============================================*/
 
 $(".daterangepicker.opensright .ranges li").on("click", function(){
 

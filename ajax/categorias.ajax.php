@@ -5,7 +5,7 @@ require_once "../modelos/categorias.modelo.php";
 
 class AjaxCategorias{
 
-		
+	
 
 	public $idCategoria;
 
@@ -13,7 +13,6 @@ class AjaxCategorias{
 
 		$item = "id";
 		$valor = $this->idCategoria;
-
 		$respuesta = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 
 		echo json_encode($respuesta);

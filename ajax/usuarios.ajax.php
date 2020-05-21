@@ -5,7 +5,7 @@ require_once "../modelos/usuarios.modelo.php";
 
 class AjaxUsuarios{
 
-		
+	
 
 	public $idUsuario;
 
@@ -40,7 +40,7 @@ class AjaxUsuarios{
 
 	}
 
-		
+
 
 	public $validarUsuario;
 
@@ -64,7 +64,6 @@ if(isset($_POST["idUsuario"])){
 	$editar -> ajaxEditarUsuario();
 
 }
-
 
 
 if(isset($_POST["activarUsuario"])){

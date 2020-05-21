@@ -8,7 +8,7 @@ require_once "../modelos/categorias.modelo.php";
 
 class AjaxProductos{
 
-  
+ 
   public $idCategoria;
 
   public function ajaxCrearCodigoProducto(){
@@ -24,7 +24,7 @@ class AjaxProductos{
   }
 
 
-   
+ 
 
   public $idProducto;
   public $traerProductos;
@@ -73,7 +73,7 @@ class AjaxProductos{
 }
 
 
-	
+
 
 if(isset($_POST["idCategoria"])){
 
@@ -82,7 +82,7 @@ if(isset($_POST["idCategoria"])){
 	$codigoProducto -> ajaxCrearCodigoProducto();
 
 }
- 
+
 
 if(isset($_POST["idProducto"])){
 
@@ -102,7 +102,7 @@ if(isset($_POST["traerProductos"])){
 
 }
 
- 
+
 
 if(isset($_POST["nombreProducto"])){
 
@@ -111,3 +111,9 @@ if(isset($_POST["nombreProducto"])){
   $traerProductos -> ajaxEditarProducto();
 
 }
+
+
+
+
+
+

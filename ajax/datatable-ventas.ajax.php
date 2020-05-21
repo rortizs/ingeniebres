@@ -6,7 +6,7 @@ require_once "../modelos/productos.modelo.php";
 
 class TablaProductosVentas{
 
- 	 
+ 	
 
 	public function mostrarTablaProductosVentas(){
 
@@ -32,7 +32,7 @@ class TablaProductosVentas{
 
 		  	$imagen = "<img src='".$productos[$i]["imagen"]."' width='40px'>";
 
-		  	 
+		  	
 
   			if($productos[$i]["stock"] <= 10){
 
@@ -48,7 +48,7 @@ class TablaProductosVentas{
 
   			}
 
-		  	 
+		  	
 
 		  	$botones =  "<div class='btn-group'><button class='btn btn-primary agregarProducto recuperarBoton' idProducto='".$productos[$i]["id"]."'>Agregar</button></div>"; 
 
@@ -77,7 +77,7 @@ class TablaProductosVentas{
 
 }
 
- 
+
 $activarProductosVentas = new TablaProductosVentas();
 $activarProductosVentas -> mostrarTablaProductosVentas();
 

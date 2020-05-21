@@ -115,17 +115,10 @@ CUERPO DOCUMENTO
 
    echo '<div class="wrapper">';
 
-	/*ENCABEZADO*/
+    include 'modulos/header.php';
+   include 'modulos/menu.php';
 
-  include 'modulos/header.php';
-
-    /*MENU*/
-
-    include "modulos/menu.php";
-
-    
-    /*CONTENIDO*/
- 
+   
 
     if(isset($_GET["ruta"])){
 
@@ -139,7 +132,7 @@ CUERPO DOCUMENTO
          $_GET["ruta"] == "editar-venta" ||
          $_GET["ruta"] == "reportes" ||
          $_GET["ruta"] == "salir"){
-
+          
         include "modulos/".$_GET["ruta"].".php";
 
       }else{

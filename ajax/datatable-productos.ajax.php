@@ -10,6 +10,7 @@ require_once "../modelos/categorias.modelo.php";
 class TablaProductos{
 
  	
+
 	public function mostrarTablaProductos(){
 
 		$item = null;
@@ -30,7 +31,8 @@ class TablaProductos{
 
 		  for($i = 0; $i < count($productos); $i++){
 
-		  	
+		  
+
 		  	$imagen = "<img src='".$productos[$i]["imagen"]."' width='40px'>";
 
 		  	
@@ -40,7 +42,6 @@ class TablaProductos{
 
 		  	$categorias = ControladorCategorias::ctrMostrarCategorias($item, $valor);
 
-		  	 
 
   			if($productos[$i]["stock"] <= 10){
 
@@ -56,7 +57,7 @@ class TablaProductos{
 
   			}
 
-		  	
+		  	 
 
   			if(isset($_GET["perfilOculto"]) && $_GET["perfilOculto"] == "Especial"){
 
@@ -95,11 +96,8 @@ class TablaProductos{
 
 	}
 
-
-
 }
 
- 
 $activarProductos = new TablaProductos();
 $activarProductos -> mostrarTablaProductos();
 

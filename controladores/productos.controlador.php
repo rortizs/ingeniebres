@@ -2,7 +2,9 @@
 
 class ControladorProductos{
 
-	/*Listar productos*/
+	/*=============================================
+	MOSTRAR PRODUCTOS
+	=============================================*/
 
 	static public function ctrMostrarProductos($item, $valor, $orden){
 
@@ -14,6 +16,9 @@ class ControladorProductos{
 
 	}
 
+	/*=============================================
+	CREAR PRODUCTO
+	=============================================*/
 
 	static public function ctrCrearProducto(){
 
@@ -24,7 +29,7 @@ class ControladorProductos{
 			   preg_match('/^[0-9.]+$/', $_POST["nuevoPrecioCompra"]) &&
 			   preg_match('/^[0-9.]+$/', $_POST["nuevoPrecioVenta"])){
 
-		   		/*validación imagen*/
+		   	
 
 			   	$ruta = "vistas/img/productos/default/anonymous.png";
 
@@ -35,6 +40,7 @@ class ControladorProductos{
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
 
+
 					$directorio = "vistas/img/productos/".$_POST["nuevoCodigo"];
 
 					mkdir($directorio, 0755);
@@ -43,6 +49,7 @@ class ControladorProductos{
 
 					if($_FILES["nuevaImagen"]["type"] == "image/jpeg"){
 
+					
 
 						$aleatorio = mt_rand(100,999);
 
@@ -60,6 +67,7 @@ class ControladorProductos{
 
 					if($_FILES["nuevaImagen"]["type"] == "image/png"){
 
+						
 
 						$aleatorio = mt_rand(100,999);
 
@@ -95,7 +103,7 @@ class ControladorProductos{
 
 						swal({
 							  type: "success",
-							  title: "El producto se ha guardadode manera exitosa",
+							  title: "El producto ha sido guardado correctamente",
 							  showConfirmButton: true,
 							  confirmButtonText: "Cerrar"
 							  }).then(function(result){
@@ -117,7 +125,7 @@ class ControladorProductos{
 
 					swal({
 						  type: "error",
-						  title: "campos requridos no pueden ir vacíos o contener carácteres especiales!",
+						  title: "¡El producto no puede ir con los campos vacíos o llevar caracteres especiales!",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
 						  }).then(function(result){
@@ -144,7 +152,7 @@ class ControladorProductos{
 			   preg_match('/^[0-9.]+$/', $_POST["editarPrecioCompra"]) &&
 			   preg_match('/^[0-9.]+$/', $_POST["editarPrecioVenta"])){
 
-		   		/*validación de imagen*/
+		  
 
 			   	$ruta = $_POST["imagenActual"];
 
@@ -155,7 +163,10 @@ class ControladorProductos{
 					$nuevoAncho = 500;
 					$nuevoAlto = 500;
 
+					
+
 					$directorio = "vistas/img/productos/".$_POST["editarCodigo"];
+
 
 					if(!empty($_POST["imagenActual"]) && $_POST["imagenActual"] != "vistas/img/productos/default/anonymous.png"){
 
@@ -166,8 +177,11 @@ class ControladorProductos{
 						mkdir($directorio, 0755);	
 					
 					}
+			
 
 					if($_FILES["editarImagen"]["type"] == "image/jpeg"){
+
+					
 
 						$aleatorio = mt_rand(100,999);
 
@@ -184,6 +198,8 @@ class ControladorProductos{
 					}
 
 					if($_FILES["editarImagen"]["type"] == "image/png"){
+
+					
 
 						$aleatorio = mt_rand(100,999);
 
@@ -219,7 +235,7 @@ class ControladorProductos{
 
 						swal({
 							  type: "success",
-							  title: "El producto ha sido actualizado de manera exitosa",
+							  title: "El producto ha sido editado correctamente",
 							  showConfirmButton: true,
 							  confirmButtonText: "Cerrar"
 							  }).then(function(result){
@@ -241,7 +257,7 @@ class ControladorProductos{
 
 					swal({
 						  type: "error",
-						  title: "campos requridos no pueden ir vacíos o contener carácteres especiales!",
+						  title: "¡El producto no puede ir con los campos vacíos o llevar caracteres especiales!",
 						  showConfirmButton: true,
 						  confirmButtonText: "Cerrar"
 						  }).then(function(result){
@@ -258,6 +274,9 @@ class ControladorProductos{
 
 	}
 
+	/*=============================================
+	BORRAR PRODUCTO
+	=============================================*/
 	static public function ctrEliminarProducto(){
 
 		if(isset($_GET["idProducto"])){
@@ -280,7 +299,7 @@ class ControladorProductos{
 
 				swal({
 					  type: "success",
-					  title: "El producto se ha eliminado de manera exitosa",
+					  title: "El producto ha sido borrado correctamente",
 					  showConfirmButton: true,
 					  confirmButtonText: "Cerrar"
 					  }).then(function(result){
@@ -298,6 +317,10 @@ class ControladorProductos{
 
 
 	}
+
+	/*=============================================
+	MOSTRAR SUMA VENTAS
+	=============================================*/
 
 	static public function ctrMostrarSumaVentas(){
 

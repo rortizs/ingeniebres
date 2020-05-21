@@ -15,7 +15,6 @@ if($_SESSION["perfil"] == "Vendedor"){
 ?>
 
 <div class="content-wrapper">
-
   <section class="content-header">
     
     <h1>
@@ -114,6 +113,9 @@ if($_SESSION["perfil"] == "Vendedor"){
 
 </div>
 
+<!--=====================================
+MODAL AGREGAR CATEGORÍA
+======================================-->
 
 <div id="modalAgregarCategoria" class="modal fade" role="dialog">
   
@@ -123,7 +125,10 @@ if($_SESSION["perfil"] == "Vendedor"){
 
       <form role="form" method="post">
 
-        
+        <!--=====================================
+        CABEZA DEL MODAL
+        ======================================-->
+
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -132,12 +137,15 @@ if($_SESSION["perfil"] == "Vendedor"){
 
         </div>
 
-        
+        <!--=====================================
+        CUERPO DEL MODAL
+        ======================================-->
+
         <div class="modal-body">
 
           <div class="box-body">
 
-            
+            <!-- ENTRADA PARA EL NOMBRE -->
             
             <div class="form-group">
               
@@ -155,7 +163,10 @@ if($_SESSION["perfil"] == "Vendedor"){
 
         </div>
 
-        
+        <!--=====================================
+        PIE DEL MODAL
+        ======================================-->
+
         <div class="modal-footer">
 
           <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
@@ -179,6 +190,9 @@ if($_SESSION["perfil"] == "Vendedor"){
 
 </div>
 
+<!--=====================================
+MODAL EDITAR CATEGORÍA
+======================================-->
 
 <div id="modalEditarCategoria" class="modal fade" role="dialog">
   
@@ -188,7 +202,9 @@ if($_SESSION["perfil"] == "Vendedor"){
 
       <form role="form" method="post">
 
-       
+        <!--=====================================
+        CABEZA DEL MODAL
+        ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -198,13 +214,15 @@ if($_SESSION["perfil"] == "Vendedor"){
 
         </div>
 
-        
+        <!--=====================================
+        CUERPO DEL MODAL
+        ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-          
+            <!-- ENTRADA PARA EL NOMBRE -->
             
             <div class="form-group">
               
@@ -224,7 +242,9 @@ if($_SESSION["perfil"] == "Vendedor"){
 
         </div>
 
-       
+        <!--=====================================
+        PIE DEL MODAL
+        ======================================-->
 
         <div class="modal-footer">
 

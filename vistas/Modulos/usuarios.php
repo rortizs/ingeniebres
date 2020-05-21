@@ -137,6 +137,9 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
 </div>
 
+<!--=====================================
+MODAL AGREGAR USUARIO
+======================================-->
 
 <div id="modalAgregarUsuario" class="modal fade" role="dialog">
   
@@ -146,6 +149,10 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
       <form role="form" method="post" enctype="multipart/form-data">
 
+        <!--=====================================
+        CABEZA DEL MODAL
+        ======================================-->
+
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -154,12 +161,15 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
         </div>
 
+        <!--=====================================
+        CUERPO DEL MODAL
+        ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- nombre -->
+            <!-- ENTRADA PARA EL NOMBRE -->
             
             <div class="form-group">
               
@@ -173,7 +183,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- usuario -->
+            <!-- ENTRADA PARA EL USUARIO -->
 
              <div class="form-group">
               
@@ -187,7 +197,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- contraseña -->
+            <!-- ENTRADA PARA LA CONTRASEÑA -->
 
              <div class="form-group">
               
@@ -201,7 +211,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- perfil -->
+            <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
 
             <div class="form-group">
               
@@ -225,7 +235,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- foto -->
+            <!-- ENTRADA PARA SUBIR FOTO -->
 
              <div class="form-group">
               
@@ -233,7 +243,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
               <input type="file" class="nuevaFoto" name="nuevaFoto">
 
-              <p class="help-block">Tamaño no mayor a 2MB</p>
+              <p class="help-block">Peso máximo de la foto 2MB</p>
 
               <img src="vistas/img/usuarios/default/anonymous.png" class="img-thumbnail previsualizar" width="100px">
 
@@ -242,6 +252,10 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
           </div>
 
         </div>
+
+        <!--=====================================
+        PIE DEL MODAL
+        ======================================-->
 
         <div class="modal-footer">
 
@@ -266,6 +280,9 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
 </div>
 
+<!--=====================================
+MODAL EDITAR USUARIO
+======================================-->
 
 <div id="modalEditarUsuario" class="modal fade" role="dialog">
   
@@ -275,6 +292,9 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
       <form role="form" method="post" enctype="multipart/form-data">
 
+        <!--=====================================
+        CABEZA DEL MODAL
+        ======================================-->
 
         <div class="modal-header" style="background:#3c8dbc; color:white">
 
@@ -284,12 +304,15 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
         </div>
 
+        <!--=====================================
+        CUERPO DEL MODAL
+        ======================================-->
 
         <div class="modal-body">
 
           <div class="box-body">
 
-            <!-- nombre -->
+            <!-- ENTRADA PARA EL NOMBRE -->
             
             <div class="form-group">
               
@@ -303,7 +326,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- usuario -->
+            <!-- ENTRADA PARA EL USUARIO -->
 
              <div class="form-group">
               
@@ -317,7 +340,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- contraseña-->
+            <!-- ENTRADA PARA LA CONTRASEÑA -->
 
              <div class="form-group">
               
@@ -333,7 +356,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- perfil -->
+            <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
 
             <div class="form-group">
               
@@ -357,7 +380,7 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
 
             </div>
 
-            <!-- foto -->
+            <!-- ENTRADA PARA SUBIR FOTO -->
 
              <div class="form-group">
               
@@ -376,6 +399,10 @@ if($_SESSION["perfil"] == "Especial" || $_SESSION["perfil"] == "Vendedor"){
           </div>
 
         </div>
+
+        <!--=====================================
+        PIE DEL MODAL
+        ======================================-->
 
         <div class="modal-footer">
 
