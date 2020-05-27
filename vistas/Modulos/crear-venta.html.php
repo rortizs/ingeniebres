@@ -158,7 +158,7 @@
                             
                             <div class="input-group">
                            
-                              <span class="input-group-addon"><i class="ion ion-social-usd"></i></span>
+                              <span class="input-group-addon"><i >Q</i></span>
 
                               <input type="number" min="1" class="form-control" id="nuevoTotalVenta" name="nuevoTotalVenta" placeholder="00000" readonly required>
                               
