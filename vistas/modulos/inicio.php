@@ -81,9 +81,8 @@
         </div>
 
          <div class="col-lg-12">
-           
+          
           <?php
-
           if($_SESSION["perfil"] =="Especial" || $_SESSION["perfil"] =="Vendedor"){
 
              echo '<div class="box box-success">

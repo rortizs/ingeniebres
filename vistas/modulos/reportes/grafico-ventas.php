@@ -1,6 +1,7 @@
 <?php
 
 error_reporting(0);
+
 if(isset($_GET["fechaInicial"])){
 
     $fechaInicial = $_GET["fechaInicial"];
@@ -21,12 +22,16 @@ $sumaPagosMes = array();
 
 foreach ($respuesta as $key => $value) {
 
+	
 	$fecha = substr($value["fecha"],0,7);
 
+	
 	array_push($arrayFechas, $fecha);
 
+	
 	$arrayVentas = array($fecha => $value["total"]);
 
+	
 	foreach ($arrayVentas as $key => $value) {
 		
 		$sumaPagosMes[$key] += $value;
@@ -46,7 +51,9 @@ $noRepetirFechas = array_unique($arrayFechas);
 <div class="box box-solid bg-teal-gradient">
 	
 	<div class="box-header">
+		
  		<i class="fa fa-th"></i>
+
   		<h3 class="box-title">Gráfico de Ventas</h3>
 
 	</div>
@@ -83,6 +90,7 @@ $noRepetirFechas = array_unique($arrayFechas);
        echo "{ y: '0', ventas: '0' }";
 
     }
+
     ?>
 
     ],

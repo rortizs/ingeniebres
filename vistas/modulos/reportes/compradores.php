@@ -2,6 +2,7 @@
 
 $item = null;
 $valor = null;
+
 $ventas = ControladorVentas::ctrMostrarVentas($item, $valor);
 $clientes = ControladorClientes::ctrMostrarClientes($item, $valor);
 
@@ -14,8 +15,10 @@ foreach ($ventas as $key => $valueVentas) {
     
       if($valueClientes["id"] == $valueVentas["id_cliente"]){
 
+        
         array_push($arrayClientes, $valueClientes["nombre"]);
 
+        
         $arraylistaClientes = array($valueClientes["nombre"] => $valueVentas["neto"]);
 
         foreach ($arraylistaClientes as $key => $value) {
@@ -23,14 +26,18 @@ foreach ($ventas as $key => $valueVentas) {
           $sumaTotalClientes[$key] += $value;
         
         }
+
       }   
   }
+
 }
 
 
 $noRepetirNombres = array_unique($arrayClientes);
 
 ?>
+
+
 
 <div class="box box-primary">
 	
@@ -54,6 +61,7 @@ $noRepetirNombres = array_unique($arrayClientes);
 
 <script>
 	
+
 var bar = new Morris.Bar({
   element: 'bar-chart2',
   resize: true,
@@ -75,6 +83,5 @@ var bar = new Morris.Bar({
   preUnits: '$',
   hideHover: 'auto'
 });
-
 
 </script>

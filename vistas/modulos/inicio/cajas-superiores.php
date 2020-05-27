@@ -17,14 +17,13 @@ $totalProductos = count($productos);
 ?>
 
 
-
 <div class="col-lg-3 col-xs-6">
 
   <div class="small-box bg-aqua">
     
     <div class="inner">
       
-      <h3>$<?php echo number_format($ventas["total"],2); ?></h3>
+      <h3>Q<?php echo number_format($ventas["total"],2); ?></h3>
 
       <p>Ventas</p>
     
@@ -32,7 +31,11 @@ $totalProductos = count($productos);
     
     <div class="icon">
       
-      <i class="ion ion-social-usd"></i>
+      
+
+      <i class="fa fa-money" aria-hidden="true"></i>
+
+      
     
     </div>
     
@@ -107,7 +110,6 @@ $totalProductos = count($productos);
   <div class="small-box bg-red">
   
     <div class="inner">
-    
       <h3><?php echo number_format($totalProductos); ?></h3>
 
       <p>Productos</p>
