@@ -124,15 +124,15 @@ class ControladorVentas{
 
 				$impresora = "epson20";
 
-				$conector = new WindowsPrintConnector($impresora);
+				/*$conector = new WindowsPrintConnector($impresora);*/
 
-				$printer = new Printer($conector);
+				/*$printer = new Printer($conector);
 
 				$printer -> setJustification(Printer::JUSTIFY_CENTER);
 
 				$printer -> text(date("Y-m-d H:i:s")."\n");//Fecha de la factura
 
-				$printer -> feed(1); //Alimentamos el papel 1 vez*/
+				$printer -> feed(1); //Alimentamos el papel 1 vez
 
 				$printer -> text("Inventory System"."\n");//Nombre de la empresa
 
