@@ -30,10 +30,33 @@
 
 			</li>';
 
-
-
 		}
 
+		if($_SESSION["perfil"] == "Administrador" || $_SESSION["perfil"] == "Especial"){
+
+			echo '<li>
+
+				<a href="categorias">
+
+					<i class="fa fa-th"></i>
+					<span>Categorías</span>
+
+				</a>
+
+			</li>
+
+			<li>
+
+				<a href="productos">
+
+					<i class="fa fa-product-hunt"></i>
+					<span>Productos</span>
+
+				</a>
+
+			</li>';
+
+		}
 
 		if($_SESSION["perfil"] == "Administrador" || $_SESSION["perfil"] == "Vendedor"){
 
@@ -47,40 +70,6 @@
 				</a>
 
 			</li>';
-
-		}
-
-
-		if($_SESSION["perfil"] == "Administrador"){
-
-			echo '<li class="active">
-
-				<a href="categorias">
-
-					<i class="fa fa-th"></i>
-					<span>Categorias</span>
-
-				</a>
-
-			</li>';
-			
-
-		}
-
-
-		if($_SESSION["perfil"] == "Administrador"){
-
-			echo '<li class="active">
-
-				<a href="productos">
-
-					<i class="fa fa-product-hunt"></i>
-					<span>productos</span>
-
-				</a>
-
-			</li>';
-			
 
 		}
 
@@ -130,7 +119,7 @@
 
 					echo '<li>
 
-						<a href="reportes">
+						<a href="reportes/reportes">
 							
 							<i class="fa fa-circle-o"></i>
 							<span>Reporte de ventas</span>
@@ -148,10 +137,6 @@
 			</li>';
 
 		}
-		
-		
-
-		
 
 		?>
 
