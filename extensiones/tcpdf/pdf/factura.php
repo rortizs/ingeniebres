@@ -70,10 +70,10 @@ $bloque1 = <<<EOF
 				<div style="font-size:8.5px; text-align:right; line-height:15px;">
 					
 					<br>
-					NIT: 71.759.963-9
+					NIT: 2456789949-3
 
 					<br>
-					Dirección: Calle 44B 92-11
+					Dirección: Aldea Santa Rita 
 
 				</div>
 
@@ -84,10 +84,10 @@ $bloque1 = <<<EOF
 				<div style="font-size:8.5px; text-align:right; line-height:15px;">
 					
 					<br>
-					Teléfono: 300 786 52 49
+					Teléfono: 7945-2315
 					
 					<br>
-					ventas@inventorysystem.com
+					tiendalaamistad.com
 
 				</div>
 				
