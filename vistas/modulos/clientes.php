@@ -58,6 +58,7 @@ if($_SESSION["perfil"] == "Especial"){
            <th style="width:10px">#</th>
            <th>Nombre</th>
            <th>Documento ID</th>
+           <th>Nit</th>
            <th>Email</th>
            <th>Teléfono</th>
            <th>Dirección</th>
@@ -90,6 +91,8 @@ if($_SESSION["perfil"] == "Especial"){
                     <td>'.$value["nombre"].'</td>
 
                     <td>'.$value["documento"].'</td>
+
+                    <td>'.$value["nit"].'</td>
 
                     <td>'.$value["email"].'</td>
 
@@ -222,6 +225,20 @@ MODAL AGREGAR CLIENTE
                 <span class="input-group-addon"><i class="fa fa-phone"></i></span> 
 
                 <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'(999) 999-9999'" data-mask required>
+
+              </div>
+
+            </div>
+
+             <!-- ENTRADA PARA EL NIT -->
+            
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-address-card"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="nuevoNit" placeholder="Ingresar Nit" data-inputmask="'mask':'9999999-*'" data-mask required>
 
               </div>
 
@@ -373,6 +390,21 @@ MODAL EDITAR CLIENTE
               </div>
 
             </div>
+
+            <!-- ENTRADA PARA EL NIT -->
+            
+            <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"><i class="fa fa-address-card"></i></span> 
+
+                <input type="text" class="form-control input-lg" name="editarNit" id="editarNit" data-inputmask="'mask':'9999999-9'" data-mask required>
+
+              </div>
+
+            </div>
+
 
             <!-- ENTRADA PARA LA DIRECCIÓN -->
             
