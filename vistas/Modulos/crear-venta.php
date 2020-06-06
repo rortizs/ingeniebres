@@ -161,7 +161,7 @@ if($_SESSION["perfil"] == "Especial"){
                       <thead>
 
                         <tr>
-                          <th>Impuesto</th>
+                          <th>IVA</th>
                           <th>Total</th>      
                         </tr>
 
@@ -175,7 +175,7 @@ if($_SESSION["perfil"] == "Especial"){
                             
                             <div class="input-group">
                            
-                              <input type="number" class="form-control input-lg" min="0" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" placeholder="0" required>
+                              <input type="number" class="form-control input-lg" min="0" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" placeholder="12"  value="12" required>
 
                                <input type="hidden" name="nuevoPrecioImpuesto" id="nuevoPrecioImpuesto" required>
 
@@ -193,7 +193,7 @@ if($_SESSION["perfil"] == "Especial"){
                            
                               <span class="input-group-addon"><i >Q</i></span>
 
-                              <input type="text" class="form-control input-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" placeholder="00000" readonly required>
+                              <input type="text" class="form-control input-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" placeholder="00.00" readonly required>
 
                               <input type="hidden" name="totalVenta" id="totalVenta">
                               
