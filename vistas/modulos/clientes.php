@@ -399,7 +399,7 @@ MODAL EDITAR CLIENTE
               
                 <span class="input-group-addon"><i class="fa fa-address-card"></i></span> 
 
-                <input type="text" class="form-control input-lg" name="editarNit" id="editarNit" data-inputmask="'mask':'9999999-9'" data-mask required>
+                <input type="text" class="form-control input-lg" name="editarNit" id="editarNit" data-inputmask="'mask':'9999999-*'" data-mask required>
 
               </div>
 

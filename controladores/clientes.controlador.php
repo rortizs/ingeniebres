@@ -15,7 +15,7 @@ class ControladorClientes{
 			   	$tabla = "clientes";
 			   	$datos = array("nombre"=>$_POST["nuevoCliente"],
 							   "documento"=>$_POST["nuevoDocumentoId"],
-							   "nit"=>$_POST["nuevoNit"],
+							   "nit"=>str_replace("-","",$_POST["nuevoNit"]),
 					           "email"=>$_POST["nuevoEmail"],
 					           "telefono"=>$_POST["nuevoTelefono"],
 					           "direccion"=>$_POST["nuevaDireccion"],
@@ -65,7 +65,7 @@ class ControladorClientes{
 		if(isset($_POST["editarCliente"])){
 			if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarCliente"]) &&
 			   preg_match('/^[0-9]+$/', $_POST["editarDocumentoId"]) &&
-			   preg_match('/^[0-9]+(-?[0-9kK])?$/', $_POST["nuevoNit"]) &&
+			   preg_match('/^[0-9]+(-?[0-9kK])?$/', $_POST["editarNit"]) &&
 			   preg_match('/^[^0-9][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["editarEmail"]) && 
 			   preg_match('/^[()\-0-9 ]+$/', $_POST["editarTelefono"]) && 
 			   preg_match('/^[#\.\-a-zA-Z0-9 ]+$/', $_POST["editarDireccion"])){
@@ -75,7 +75,7 @@ class ControladorClientes{
 			   	$datos = array("id"=>$_POST["idCliente"],
 			   				   "nombre"=>$_POST["editarCliente"],
 							   "documento"=>$_POST["editarDocumentoId"],
-							   "nit"=>$_POST["nuevoNit"],
+							   "nit"=>str_replace("-","",$_POST["editarNit"]),
 					           "email"=>$_POST["editarEmail"],
 					           "telefono"=>$_POST["editarTelefono"],
 					           "direccion"=>$_POST["editarDireccion"],
