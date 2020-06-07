@@ -191,7 +191,7 @@ if($_SESSION["perfil"] == "Especial"){
                             
                             <div class="input-group">
                            
-                              <span class="input-group-addon"><i >Q</i></span>
+                              <span class="input-group-addon"><i >GTQ</i></span>
 
                               <input type="text" class="form-control input-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" placeholder="00000" readonly required>
 
